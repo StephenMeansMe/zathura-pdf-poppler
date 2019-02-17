@@ -11,12 +11,19 @@ poppler-glib (>= 0.18)
 
 Installation
 ------------
-To build and install the plugin:
 
-  make install
+Run the following command to build and install the plugin to your system using
+meson's ninja backend:
 
-Uninstall:
-----------
-To delete the plugin from your system, just type:
+  meson build
+  cd build
+  ninja
+  ninja install
 
-  make uninstall
+Note that the default backend for meson might vary based on the platform. Please
+refer to the meson documentation for platform specific dependencies.
+
+Bugs
+----
+
+Please report bugs at https://git.pwmt.org/pwmt/zathura-pdf-poppler.
